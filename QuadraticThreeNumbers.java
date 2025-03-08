@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
 * The QuadraticThreeNumbers is 2 programs in one.
 * The user can choose the one they want to try.
-* The first program is a solves quadratic equations.
+* The first program solves quadratic equations.
 * The user is asked to enter a b and c, then the value(s) of x is displayed
 * The second program asks the user to enter 3 numbers.
 * The program then displays the smallest number.
@@ -225,6 +225,8 @@ final class QuadraticThreeNumbers {
                     double numC = scanner.nextDouble();
 
                     // Clear leftover text to fix error
+                    // source: https://www.geeksforgeeks.org/...
+                    // ...scanner-nextline-method-in-java-with-examples/
                     scanner.nextLine();
 
                     // If the user chooses program 1
@@ -272,6 +274,8 @@ final class QuadraticThreeNumbers {
                 // If the user enters an invalid choice
                 System.out.println("Invalid choice. Try again.");
             }
+        
+        // source: https://ioflood.com/blog/java-notequals-operator/#
         // While the user does not enter q
         } while (!choice.equals("q"));
 
