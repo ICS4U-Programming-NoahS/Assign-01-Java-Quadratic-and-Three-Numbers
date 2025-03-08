@@ -274,7 +274,7 @@ final class QuadraticThreeNumbers {
                 // If the user enters an invalid choice
                 System.out.println("Invalid choice. Try again.");
             }
-        
+
         // source: https://ioflood.com/blog/java-notequals-operator/#
         // While the user does not enter q
         } while (!choice.equals("q"));
